@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ganesh.foodnow.PlaceOrder"
+    tools:showIn="@layout/activity_place_order">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Food"
+        android:id="@+id/foodType"
+        android:textColor="@color/colorAccent"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sushi"
+        android:id="@+id/sushi"
+        android:textColor="@color/colorAccent"
+        android:padding="20px"
+        android:layout_above="@+id/quantity"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quantity"
+        android:id="@+id/quantity"
+        android:textColor="@color/colorAccent"
+        android:padding="20px"
+        android:layout_below="@+id/foodType"
+        android:layout_alignLeft="@+id/foodType"
+        android:layout_alignStart="@+id/foodType" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quanttyVal"
+        android:textColor="@color/colorAccent"
+        android:padding="20px"
+        android:layout_alignTop="@+id/quantity"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity"
+        android:text="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price"
+        android:textColor="@color/colorAccent"
+        android:padding="20px"
+        android:id="@+id/price"
+        android:layout_below="@+id/quantity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$6.99"
+        android:textColor="@color/colorAccent"
+        android:padding="20px"
+        android:id="@+id/totalPrice"
+        android:layout_alignTop="@+id/price"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/totalPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Directions"
+        android:visibility="invisible"
+        android:id="@+id/getDirections1"
+        android:background="@color/colorAccent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

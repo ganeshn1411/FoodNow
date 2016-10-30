@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ganesh.fn.Main22Activity"
+    tools:showIn="@layout/activity_menu_list">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/listView"
+        android:textSize="50px"
+        android:paddingTop="30px"
+        android:background="@color/grey"
+        android:textStyle="bold"
+        android:choiceMode="singleChoice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:paddingTop="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView1"
+        android:choiceMode="singleChoice"
+        android:layout_alignTop="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/listView1" />
+
+</RelativeLayout>
